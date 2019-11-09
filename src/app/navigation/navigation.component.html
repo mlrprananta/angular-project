@@ -1,4 +1,4 @@
-<nav class="navbar is-fixed-top is-transparent" [class.solid]="isOpen">
+<nav class="navbar is-fixed-top" [ngClass]="{'solid':isSolid, 'is-transparent':!isSolid}">
     <div class="container">
         <div class="navbar-brand">
             <div class="navbar-item">
@@ -10,19 +10,12 @@
                 <span></span>
             </a>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu" [class.is-active]="isOpen">
             <div class="navbar-end">
                 <a class="navbar-item" routerLink='/dashboard'>Home</a>
-                <a class="navbar-item">About Me</a>
+                <a class="navbar-item">About</a>
                 <a class="navbar-item" routerLink='/projects'>Projects</a>
             </div>
         </div>
     </div>
-    <aside *ngIf="isOpen" class="menu has-text-right">
-            <ul class="menu-list">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Projects</a></li>
-            </ul>
-        </aside>
 </nav>

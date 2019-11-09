@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
 export class NavigationComponent implements OnInit {
 
   isOpen: boolean = false;
+  isSolid: boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private element: ElementRef, private router: Router) { }
 
   ngOnInit() {
     console.log("Started")
@@ -18,11 +19,15 @@ export class NavigationComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    console.debug('Ok')
+    let offset = this.element.nativeElement.getBoundingClientRect().top;
+    if (offset < -200) {
+      this.isSolid = true;
+    } else {
+      this.isSolid = false;
+    }
   }
 
   onClick() {
     this.isOpen = !this.isOpen;
-
   }
 }
