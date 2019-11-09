@@ -1,10 +1,31 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
+  animations: [
+    trigger('update', [
+      state('transparent', style({
+        backgroundColor: 'transparent'
+      })),
+      state('solid', style({
+        backgroundColor: 'white'
+      })),
+      transition('transparent <=> solid', [
+        animate('0.2s')
+      ]) 
+    ])
+  ]
 })
 export class NavigationComponent implements OnInit {
 

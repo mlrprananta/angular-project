@@ -1,4 +1,4 @@
-<nav class="navbar is-fixed-top" [ngClass]="{'solid':isSolid, 'is-transparent':!isSolid}">
+<nav class="navbar is-fixed-top" [@update]="isSolid ? 'solid' : 'transparent'">
     <div class="container">
         <div class="navbar-brand">
             <div class="navbar-item">
