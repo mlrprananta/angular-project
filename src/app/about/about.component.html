@@ -1,0 +1,29 @@
+<section class="section">
+    <div class="columns is-centered is-vcentered">
+        <div class="column is-one-quarter has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded" src={{profile}}>
+            </figure>
+            <h1 class="subtitle is-5">Luke Prananta</h1>
+        </div>
+        <div class="column is-half">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                    <h1 class="title is-4">About Me</h1>
+                    <p>
+                        I am a motivated computer science graduate who excels in both individual and team work. I work well in a team and always strive to create an atmosphere and workflow that benefits all members. I’m looking for positions that will broaden my understanding and knowledge in the fields of computer and data science.
+                    </p>
+                    
+                    <h2 class="subtitle is-5">Skills</h2>
+                    <div class="tags" >
+                        <span *ngFor="let skill of skills" class="tag">{{skill.name}}</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
