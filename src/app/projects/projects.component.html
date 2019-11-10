@@ -1,6 +1,29 @@
-<section class="section">
-    <div class="container has-text-centered">
+<section class="section" id="projects">
+    <div class="content has-text-centered">
         <h1 class="title is-3">Projects</h1>
-        <p>Soon coming, coming soon.</p>
+        <p>An overview of my recent work.</p>
+    </div>
+    <div class="columns is-centered .is-multiline">
+        <div *ngFor="let project of projects" class="column is-narrow has-text-centered" >
+            <div class="card is-inline-block" style="width: 266px">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img class="" src={{project.image}}>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <h1 class="title is-6">{{project.name}}</h1>
+                        <p>{{project.description}}</p>
+                    </div>
+                    <div class="tags">
+                        <span *ngFor="let skill of project.skills" class="tag">{{skill.name}}</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>

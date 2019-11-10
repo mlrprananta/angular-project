@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { Location } from '@angular/common';
+import { Router, Scroll, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',

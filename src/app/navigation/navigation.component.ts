@@ -51,4 +51,8 @@ export class NavigationComponent implements OnInit {
   onClick() {
     this.isOpen = !this.isOpen;
   }
+
+  scrollToElement(target) {
+    
+  }
 }

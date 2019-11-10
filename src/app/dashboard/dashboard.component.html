@@ -1,17 +1,21 @@
-<section class="hero hero-background is-fullheight">
+<section class="hero hero-background is-fullheight" id="home">
     <div class="hero-body">
         <div class="container">
             <div class="container has-text-left">
                 <p class="subtitle is-4">Hi there</p>
                 <p class="title is-2">I'm Luke</p>
-                <a class="button is-medium is-primary is-inverted is-outlined ">Learn more</a>
+                <a class="button is-medium is-primary is-inverted is-outlined " [ngx-scroll-to]="'about'">Learn more</a>
             </div>
         </div>
     </div>
 </section>
+
+<div class="container"><hr class="hr"></div>
 
 <app-about></app-about>
 
 <div class="container"><hr class="hr"></div>
 
 <app-projects></app-projects>
+
+<div class="container"><hr class="hr"></div>

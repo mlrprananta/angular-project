@@ -1,4 +1,4 @@
-import {Skill} from './skill'
+import {Skill} from '@app/skill'
 
 export const SKILLS: Skill[] = [
     {name: 'Java'},
@@ -10,6 +10,7 @@ export const SKILLS: Skill[] = [
     {name: 'MATLAB'},
     {name: 'HTML'},
     {name: 'CSS'},
+    {name: 'Unity3D'},
     {name: 'GitLab'},
     {name: 'Git'},
     {name: 'GitHub'}

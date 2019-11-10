@@ -12,9 +12,10 @@
         </div>
         <div class="navbar-menu" [class.is-active]="isOpen">
             <div class="navbar-end">
-                <a class="navbar-item" routerLink='/dashboard'>Home</a>
-                <a class="navbar-item">About</a>
-                <a class="navbar-item" routerLink='/projects'>Projects</a>
+                <a class="navbar-item" [ngx-scroll-to]="'home'">Home</a>
+                <a class="navbar-item" [ngx-scroll-to]="'about'">About</a>
+                <a class="navbar-item" [ngx-scroll-to]="'projects'">Projects</a>
+                <a class="navbar-item" href="#contacts">Contact</a>
             </div>
         </div>
     </div>
