@@ -41,7 +41,7 @@ export class NavigationComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     let offset = this.element.nativeElement.getBoundingClientRect().top;
-    if (offset < -200) {
+    if (offset < 0) {
       this.isSolid = true;
     } else {
       this.isSolid = false;
@@ -53,6 +53,6 @@ export class NavigationComponent implements OnInit {
   }
 
   scrollToElement(target) {
-    
+
   }
 }

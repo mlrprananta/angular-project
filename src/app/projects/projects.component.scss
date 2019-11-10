@@ -1,0 +1,26 @@
+.is-thumbnail {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    transition: .4s ease;
+}
+
+.card:hover .is-overlay {
+    opacity: 1;
+  }
+
+.card:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+.is-overlay {
+    transition: .3s ease;
+    opacity: 0;
+    background-color: hsla(255,255,255,0.85);
+    border-radius: 10px;
+}

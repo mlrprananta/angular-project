@@ -1,0 +1,16 @@
+
+$column-gap: 1.0em;
+
+@import "../../../node_modules/bulma/bulma";
+
+.is-icon {
+    color: $dark;
+    transition: .4s ease;
+    position: relative;
+    bottom: 0;
+}
+
+.is-icon:hover {
+    position: relative;
+    bottom: 3px;
+}

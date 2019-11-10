@@ -3,7 +3,7 @@ import { Project } from '@app/project';
 export const PROJECTS: Project[] = [
     {
         name: 'Personal Website',
-        description: 'A personal website to present a front-end built with Angular and Bulma.',
+        description: 'My personal website built with Angular and Bulma.',
         image: 'assets/angular.svg',
         id: 1,
         skills: [
@@ -21,6 +21,16 @@ export const PROJECTS: Project[] = [
         skills: [
             { name: 'JavaScript' },
             { name: 'Node.js' },
+        ]
+    },
+    {
+        name: 'Bouldering Logging App',
+        description: 'An Angular-based web-app to track your bouldering progress.',
+        image: 'assets/IMG_4823.jpg',
+        id: 3,
+        skills: [
+            { name: 'TypeScript' },
+            { name: 'Angular' },
         ]
     },
 ]
