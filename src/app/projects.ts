@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
             { name: 'Node.js' },
         ]
     },
-    {
+    /*{
         name: 'Bouldering Logging App',
         description: 'An Angular-based web-app to track your bouldering progress.',
         image: 'assets/IMG_4823.jpg',
@@ -32,5 +32,5 @@ export const PROJECTS: Project[] = [
             { name: 'TypeScript' },
             { name: 'Angular' },
         ]
-    },
+    },*/
 ]
