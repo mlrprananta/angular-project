@@ -1,6 +1,7 @@
-@import "../../../node_modules/bulma/bulma";
+@import "../../styles.scss";
 
-.navbar-brand {
+.navbar {
+    border-style: solid;
     border-width: 4px 0 0 0;
     border-color: $primary;
 }

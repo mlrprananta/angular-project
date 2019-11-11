@@ -1,12 +1,16 @@
+
 .is-thumbnail {
     border-radius: 10px;
 }
 
 .card {
+
+
     border-radius: 10px;
     position: relative;
     bottom: 0;
     transition: .4s ease;
+
 }
 
 .card:hover .is-overlay {
